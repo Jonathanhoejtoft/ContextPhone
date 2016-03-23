@@ -46,24 +46,7 @@ define('GDS_SERVICE_ACCOUNT_NAME', 'jonathan@contextphone-1253.iam.gserviceaccou
 define('GDS_DATASET_ID', 's~contextphone-1253'); //Name of the app prepended by "s~"*/
 
 
-// Build a new entity
-$obj_book = new GDS\Entity();
-$obj_book->title = 'grimme fortællinger';
-$obj_book->author = 'William Shakespeare';
-$obj_book->isbn = '18402243394';
 
-// Write it to Datastore
-$obj_store = new GDS\Store('test');
-$obj_store->upsert($obj_book);
-if($obj_store){
-    echo "New entity added!" . "<br>";
-    echo "title: " . $obj_book->title . "<br>";
-    echo "author: " . $obj_book->author . "<br>";
-    echo "isbn: " . $obj_book->isbn . "<br>";
-}
-else {
-    echo "failed";
-}
 $obj_store_fetch = new GDS\Store('test');
 
 //show($obj_store_fetch->fetchAll());
@@ -73,33 +56,16 @@ $obj_store_fetch = new GDS\Store('test');
  *
  * @param $arr
  */
-function show($arr)
-{
-    echo PHP_EOL, "Query found ", count($arr), " records", PHP_EOL . "<br>";
-    foreach ($arr as $obj_model) {
-        echo "   Titel: {$obj_model->author}, author: {$obj_model->title}", PHP_EOL . "<br>";
-    }
-}
 
-    show($obj_store_fetch->fetchAll());
 
 
 
 ?>
-<html>
-<head>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-</head>
-<body>
-<script>
-    jQuery(document).ready(function(){
-       $("button").click(function(){
-           $.ajax({ url: 'scripts.php' });
-       });
-    });
-</script>
-<button>Delete all entries</button>
 
-</body>
-</html>
+<?php
+$arr_books = $obj_store_fetch->fetchAll();
+echo "Found ", count($arr_books), " records", PHP_EOL;
+$obj_store_fetch->delete($arr_books);
+echo "deleted all!"
+?>
+
