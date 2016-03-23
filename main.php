@@ -38,6 +38,7 @@ require_once("GDS/Store.php");
 
 require_once("GDS/Gateway/ProtoBuf.php");
 require_once("GDS/Mapper/ProtoBuf.php");
+require_once("GDS/Mapper/ProtoBufGQLParser.php");
 
 /*//define GDS constants
 define('GDS_APP_NAME', 'contextphone-1253'); //Name of the app
@@ -47,7 +48,7 @@ define('GDS_DATASET_ID', 's~contextphone-1253'); //Name of the app prepended by 
 
 // Build a new entity
 $obj_book = new GDS\Entity();
-$obj_book->title = 'hans og grete';
+$obj_book->title = 'grimme fortællinger';
 $obj_book->author = 'William Shakespeare';
 $obj_book->isbn = '18402243394';
 
@@ -63,6 +64,25 @@ if($obj_store){
 else {
     echo "failed";
 }
+$obj_store_fetch = new GDS\Store('test');
+
+//show($obj_store_fetch->fetchAll());
+
+/**
+ * Show result data
+ *
+ * @param $arr
+ */
+function show($arr)
+{
+    echo PHP_EOL, "Query found ", count($arr), " records", PHP_EOL;
+    foreach ($arr as $obj_model) {
+        echo "   Email: {$obj_model->getKeyName()}, Name: {$obj_model->title}", PHP_EOL;
+    }
+}
+
+    show($obj_store_fetch->fetchAll());
+
 
 
 ?>
