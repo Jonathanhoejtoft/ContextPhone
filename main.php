@@ -45,9 +45,44 @@ define('GDS_APP_NAME', 'contextphone-1253'); //Name of the app
 define('GDS_SERVICE_ACCOUNT_NAME', 'jonathan@contextphone-1253.iam.gserviceaccount.com'); //Google service account
 define('GDS_DATASET_ID', 's~contextphone-1253'); //Name of the app prepended by "s~"*/
 
+/* define the get request */
+foreach($_GET as $key=>$value){
+    echo $key, ' => ', $value, "<br/>";
+}
+
+// Show a particular value.
+$id = $_GET['id'];
+$beacon = $_GET['beacon'];
+
+if($id) {
+
+    echo '<p/>ID: ', $id, "<br/>";
+
+    $obj_book = new GDS\Entity();
+    $obj_book->id = $id;
+    $obj_book->beaconname = $beacon;
+    // Write it to Datastore
+    $obj_store = new GDS\Store('Beacon');
+    $obj_store->upsert($obj_book);
+
+    if($obj_store){
+        echo "New entity added!" . "<br>";
+        echo "Beacon_ID: " . $obj_book->id . "<br>";
+        echo "BeaconName: " . $obj_book->beaconname . "<br>";
+
+    }
+    else {
+        echo "failed";
+    }
+}
+else {
+    echo '<p>No ID parameter.</p>';
+}
+/* end get request */
 
 // Build a new entity
-$obj_book = new GDS\Entity();
+
+/*$obj_book = new GDS\Entity();
 $obj_book->title = 'grimme fortællinger';
 $obj_book->author = 'William Shakespeare';
 $obj_book->isbn = '18402243394';
@@ -63,8 +98,11 @@ if($obj_store){
 }
 else {
     echo "failed";
-}
-$obj_store_fetch = new GDS\Store('test');
+}*/
+
+
+
+$obj_store_fetch = new GDS\Store('Beacon');
 
 //show($obj_store_fetch->fetchAll());
 
@@ -77,7 +115,7 @@ function show($arr)
 {
     echo PHP_EOL, "Query found ", count($arr), " records", PHP_EOL . "<br>";
     foreach ($arr as $obj_model) {
-        echo "   Titel: {$obj_model->author}, author: {$obj_model->title}", PHP_EOL . "<br>";
+        echo "   ID: {$obj_model->author}, Beaconname: {$obj_model->title}", PHP_EOL . "<br>";
     }
 }
 
@@ -93,13 +131,26 @@ function show($arr)
 </head>
 <body>
 <script>
-    jQuery(document).ready(function(){
-       $("button").click(function(){
-           $.ajax({ url: 'scripts.php' });
-       });
+    var data={"name":"Hola"};
+    $(document).ready(function(){
+        $('#subbut').click(function(){
+            $.ajax({
+                url: '/test',
+                type: 'POST',
+                data: data,
+                dataType: 'json',
+                success: function(data,status){
+                    alert(data.name);
+                    alert("Data" + data +"status"+status);
+                }
+            });
+            return false;
+        });
     });
 </script>
-<button>Delete all entries</button>
+<form method="post" action="scripts.php">
+    <input type="button" id="subbut">
+</form>
 
 </body>
 </html>
