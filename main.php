@@ -51,33 +51,52 @@ foreach($_GET as $key=>$value){
 }
 
 // Show a particular value.
+$entityType = $_GET['entype']; // int - specifies entity type #1 = Beacon; #2 = Sensor
+$entity = null;
 $id = $_GET['id'];
 $beacon = $_GET['beacon'];
+$sensor = $_GET['sensor'];
 
-if($id) {
+if($entityType == 1) {
+    $entity = "Beacon";
+    echo "entityType: " . $entity;
 
     echo '<p/>ID: ', $id, "<br/>";
 
-    $obj_book = new GDS\Entity();
-    $obj_book->id = $id;
-    $obj_book->beaconname = $beacon;
+    $obj_1 = new GDS\Entity();
+    $obj_1->id = $id;
+    $obj_1->beaconname = $beacon;
     // Write it to Datastore
-    $obj_store = new GDS\Store('Beacon');
-    $obj_store->upsert($obj_book);
+    $obj_store = new GDS\Store($entity);
+    $obj_store->upsert($obj_1);
+}
+else if($entityType == 2){
+    $entity = "Sensor";
+    echo "entityType: " . $entity;
 
+    echo '<p/>ID: ', $id, "<br/>";
+
+    $obj_2 = new GDS\Entity();
+    $obj_2->id = $id;
+    $obj_2->beaconname = $beacon;
+    // Write it to Datastore
+    $obj_store = new GDS\Store($entity);
+    $obj_store->upsert($obj_2);
+}
+else {
+    echo '<p>No ID parameter.</p>';
+}
     if($obj_store){
         echo "New entity added!" . "<br>";
-        echo "Beacon_ID: " . $obj_book->id . "<br>";
-        echo "BeaconName: " . $obj_book->beaconname . "<br>";
+        //echo "Beacon_ID: " . $obj_book->id . "<br>";
+        //echo "BeaconName: " . $obj_book->beaconname . "<br>";
 
     }
     else {
         echo "failed";
     }
-}
-else {
-    echo '<p>No ID parameter.</p>';
-}
+
+
 /* end get request */
 
 // Build a new entity
@@ -115,7 +134,7 @@ function show($arr)
 {
     echo PHP_EOL, "Query found ", count($arr), " records", PHP_EOL . "<br>";
     foreach ($arr as $obj_model) {
-        echo "   ID: {$obj_model->author}, Beaconname: {$obj_model->title}", PHP_EOL . "<br>";
+        echo "   ID: {$obj_model->id}, entityname: {$obj_model->beaconname}", PHP_EOL . "<br>";
     }
 }
 
