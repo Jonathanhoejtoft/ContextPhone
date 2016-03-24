@@ -50,12 +50,26 @@ foreach($_GET as $key=>$value){
     echo $key, ' => ', $value, "<br/>";
 }
 
-// Show a particular value.
+// defining get parameters
 $entityType = $_GET['entype']; // int - specifies entity type #1 = Beacon; #2 = Sensor
-$entity = null;
-$id = $_GET['id'];
-$beacon = $_GET['beacon'];
-$sensor = $_GET['sensor'];
+$entity = null; // var for defining sensor or beacon
+// define sensor params
+$id = $_GET['id']; // id for both entities
+$sensorType = $_GET['sensortype']; // Type
+$value = $_GET['value']; // value for both
+$timestamp = $_GET['timestamp'];
+$timestampInject = date("Y-m-d H:i:s");
+$androidID = $_GET['androidID']; // value for both
+// define beacon params
+$lat = $_GET['lat'];
+$long = $_GET['long'];
+$beaconID = $_GET['beacon'];
+$major = $_GET['major'];
+$minor = $_GET['minor'];
+$UUID = $_GET['uuid'];
+//$sensor = $_GET['sensor'];
+// only for testing
+$deleteID = $_GET['del'];
 
 if($entityType == 1) {
     $entity = "Beacon";
@@ -65,36 +79,43 @@ if($entityType == 1) {
 
     $obj_1 = new GDS\Entity();
     $obj_1->id = $id;
-    $obj_1->beaconname = $beacon;
+    $obj_1->lat = $lat;
+    $obj_1->long = $long;
+    $obj_1->beaconID = $beaconID;
+    $obj_1->major = $major;
+    $obj_1->minor = $minor;
+    $obj_1->androidID = $androidID;
+    $obj_1->UUID = $UUID;
     // Write it to Datastore
     $obj_store = new GDS\Store($entity);
     $obj_store->upsert($obj_1);
+
+    $obj_store_fetch = new GDS\Store($entity);
 }
 else if($entityType == 2){
     $entity = "Sensor";
     echo "entityType: " . $entity;
-
-    echo '<p/>ID: ', $id, "<br/>";
-
+    //echo '<a class="clearurl" href="\?entype=2&id=1&sensortype=sensor1&value=723&timestamp='.$timestampInject.'&androidID=ad1">add a sensor entity</a><br>'
     $obj_2 = new GDS\Entity();
     $obj_2->id = $id;
-    $obj_2->beaconname = $beacon;
+    $obj_2->sensortype = $sensorType;
+    $obj_2->value = $value;
+    $obj_2->timestamp = $timestamp;
+    $obj_2->androidID = $androidID;
     // Write it to Datastore
     $obj_store = new GDS\Store($entity);
     $obj_store->upsert($obj_2);
+
+    $obj_store_fetch = new GDS\Store($entity);
 }
-else {
-    echo '<p>No ID parameter.</p>';
-}
+
     if($obj_store){
         echo "New entity added!" . "<br>";
         //echo "Beacon_ID: " . $obj_book->id . "<br>";
         //echo "BeaconName: " . $obj_book->beaconname . "<br>";
 
     }
-    else {
-        echo "failed";
-    }
+
 
 
 /* end get request */
@@ -122,6 +143,7 @@ else {
 
 
 $obj_store_fetch = new GDS\Store('Beacon');
+$obj_store_fetch2 = new GDS\Store('Sensor');
 
 //show($obj_store_fetch->fetchAll());
 
@@ -138,9 +160,34 @@ function show($arr)
     }
 }
 
+function show2($arr)
+{
+
+    echo PHP_EOL, "Query found ", count($arr), " records", PHP_EOL . "<br>";
+    foreach ($arr as $obj_model) {
+
+        echo "   ID: {$obj_model->id}, entityname: {$obj_model->sensorname}", PHP_EOL . "<br>";
+
+
+    }
+}
+
     show($obj_store_fetch->fetchAll());
+    show2($obj_store_fetch2->fetchAll());
 
-
+/* delete script */
+if($deleteID == 1){
+    $arr_1 = $obj_store_fetch->fetchAll();
+    echo "Found ", count($arr_1), " records", PHP_EOL;
+    $obj_store_fetch->delete($arr_1);
+    echo "deleted all beacon entities!";
+}
+else if($deleteID == 2){
+    $arr_1 = $obj_store_fetch2->fetchAll();
+    echo "Found ", count($arr_1), " records", PHP_EOL;
+    $obj_store_fetch->delete($arr_1);
+    echo "deleted all sensor entities!";
+}
 
 ?>
 <html>
@@ -150,26 +197,35 @@ function show($arr)
 </head>
 <body>
 <script>
-    var data={"name":"Hola"};
-    $(document).ready(function(){
-        $('#subbut').click(function(){
-            $.ajax({
-                url: '/test',
-                type: 'POST',
-                data: data,
-                dataType: 'json',
-                success: function(data,status){
-                    alert(data.name);
-                    alert("Data" + data +"status"+status);
-                }
-            });
-            return false;
-        });
+    $(document).ready(function($){
+
+            var url = window.location.href;
+                url = url.split( '?' );
+
+        if(url[1] == null){
+            //alert("url is clear");
+
+        }
+        else{
+            //alert("url contains params");
+            window.location.href = url[0];
+        }
+       // alert(url[1]);
+
     });
 </script>
-<form method="post" action="scripts.php">
-    <input type="button" id="subbut">
-</form>
+<a href="\?del=1">delete beacon</a><br>
+<a href="\?del=2">delete sensor</a><br>
 
+
+
+<a class="clearurl" href="\?entype=1&id=1&lat=x234&long=y723&beacon=bID1&minor=m47&major=m67&androidID=ad1&uuid=uniqid1">add a beacon entity</a><br>
+<?php
+echo '<a class="clearurl" href="\?entype=2&id=1&sensortype=sensor1&value=723&timestamp='.$timestampInject.'&androidID=ad1">add a sensor entity</a><br>';
+?>
 </body>
 </html>
+<!--
+ https://www.hurl.it/#top - to test an http request;
+ http://contextphone-1253.appspot.com/
+ -->
