@@ -1,3 +1,23 @@
 body{
     background-color:aliceblue;
 }
+a{
+    color:white;
+    text-decoration: none;
+}
+button {
+    width:250px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #181818 95%, #1a1a1a 95%, #000000 100%);
+    font-family: dinbk;
+    padding: 10px;
+    border: none;
+}
+button:hover {
+    background: linear-gradient(to bottom, #3a3a3a 95%, #3a3a3a 95%, #000000 100%);
+}
+

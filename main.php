@@ -16,6 +16,11 @@
  * limitations under the License.
  */
 
+/* setting the default timezone to Copenhagen/denmark */
+date_default_timezone_set('Europe/Copenhagen');
+
+
+
 function google_api_php_client_autoload($className) {
     $classPath = explode('_', $className);
     if ($classPath[0] != 'Google') {
@@ -35,7 +40,7 @@ require_once("GDS/Gateway.php");
 require_once("GDS/Mapper.php");
 require_once("GDS/Schema.php");
 require_once("GDS/Store.php");
-
+require_once 'GDS/Exception/GQL.php';
 require_once("GDS/Gateway/ProtoBuf.php");
 require_once("GDS/Mapper/ProtoBuf.php");
 require_once("GDS/Mapper/ProtoBufGQLParser.php");
@@ -70,6 +75,7 @@ $UUID = $_GET['uuid'];
 //$sensor = $_GET['sensor'];
 // only for testing
 $deleteID = $_GET['del'];
+$updateID = $_GET['upd'];
 
 if($entityType == 1) {
     $entity = "Beacon";
@@ -78,7 +84,7 @@ if($entityType == 1) {
     echo '<p/>ID: ', $id, "<br/>";
 
     $obj_1 = new GDS\Entity();
-    $obj_1->id = $id;
+    //$obj_1->id = $id;
     $obj_1->lat = $lat;
     $obj_1->long = $long;
     $obj_1->beaconID = $beaconID;
@@ -97,7 +103,7 @@ else if($entityType == 2){
     echo "entityType: " . $entity;
     //echo '<a class="clearurl" href="\?entype=2&id=1&sensortype=sensor1&value=723&timestamp='.$timestampInject.'&androidID=ad1">add a sensor entity</a><br>'
     $obj_2 = new GDS\Entity();
-    $obj_2->id = $id;
+    //$obj_2->id = $id;
     $obj_2->sensortype = $sensorType;
     $obj_2->value = $value;
     $obj_2->timestamp = $timestamp;
@@ -154,19 +160,19 @@ $obj_store_fetch2 = new GDS\Store('Sensor');
  */
 function show($arr)
 {
-    echo PHP_EOL, "Query found ", count($arr), " records", PHP_EOL . "<br>";
+    echo PHP_EOL, "Query found ", count($arr), ":Beacon records", PHP_EOL . "<br>";
     foreach ($arr as $obj_model) {
-        echo "   ID: {$obj_model->id}, entityname: {$obj_model->beaconname}", PHP_EOL . "<br>";
+        echo "   ID: {$obj_model->ID}, beaconID: {$obj_model->beaconID}", PHP_EOL . "<br>";
     }
 }
 
 function show2($arr)
 {
 
-    echo PHP_EOL, "Query found ", count($arr), " records", PHP_EOL . "<br>";
+    echo PHP_EOL, "Query found ", count($arr), ":sensor records", PHP_EOL . "<br>";
     foreach ($arr as $obj_model) {
 
-        echo "   ID: {$obj_model->id}, entityname: {$obj_model->sensorname}", PHP_EOL . "<br>";
+        echo "   ID: {$obj_model->ID}, value: {$obj_model->value}", PHP_EOL . "<br>";
 
 
     }
@@ -174,6 +180,8 @@ function show2($arr)
 
     show($obj_store_fetch->fetchAll());
     show2($obj_store_fetch2->fetchAll());
+
+
 
 /* delete script */
 if($deleteID == 1){
@@ -183,10 +191,28 @@ if($deleteID == 1){
     echo "deleted all beacon entities!";
 }
 else if($deleteID == 2){
-    $arr_1 = $obj_store_fetch2->fetchAll();
+
+    //$arr_1 = $obj_store_fetch2->fetchById("4967730973245440");
+    //$arr_1 = $obj_store_fetch2->fetchAll();
+    $arr_1 = $obj_store_fetch2->fetchOne("select * from Sensor where value=725"); // deleting based on GQL
     echo "Found ", count($arr_1), " records", PHP_EOL;
-    $obj_store_fetch->delete($arr_1);
-    echo "deleted all sensor entities!";
+    if($arr_1 != 0){
+        $obj_store_fetch2->delete($arr_1);
+        echo "deleted all sensor entities!";
+    }
+    else{
+        echo "no id found";
+    }
+
+
+}
+/* update */
+if($updateID){
+    $arr_1 = $obj_store_fetch2->fetchOne("select * from Sensor where value='".$updateID."'"); // selecting based on GQL
+    echo "Found ", count($arr_1), " records", PHP_EOL;
+}
+else{
+    echo "no entity with that id found";
 }
 
 ?>
@@ -196,33 +222,44 @@ else if($deleteID == 2){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
+<hr>
+<button><a href="\?del=1">delete beacon</a></button><br>
+<button><a id="delsensor" href="\?del=2">delete sensor</a></button><br>
+<button><a id="update" href="">update sensor</a></button><br>
+
+
+
+<button><a class="clearurl" href="\?entype=1&id=1&lat=x234&long=y723&beacon=bID1&minor=m47&major=m67&androidID=ad1&uuid=uniqid1">add a beacon entity</a></button><br>
+<button>
+<?php
+echo '<a class="clearurl" href="\?entype=2&id=1&sensortype=sensor1&timestamp='.$timestampInject.'&androidID=ad1&value=755">add a sensor entity</a><br>';
+?>
+    </button>
+<br>
+<label for="val">write value to update/delete</label>
+<input type="text" id="val">
+
 <script>
-    $(document).ready(function($){
-
-            var url = window.location.href;
-                url = url.split( '?' );
-
+    jQuery(document).ready(function($){
+        /* clear url on refresh */
+        var url = window.location.href;
+        url = url.split( '?' );
         if(url[1] == null){
             //alert("url is clear");
-
         }
         else{
             //alert("url contains params");
             window.location.href = url[0];
         }
-       // alert(url[1]);
 
+        var val =  $("#val").val();
+        $("#val").change(function(){
+            $("#update").attr("href", "\?upd="+$("#val").val());
+            $("#delsensor").attr("href", "\?upd="+$("#val").val()+"&del=2");
+            alert("changed" + $("#val").val());
+        });
     });
 </script>
-<a href="\?del=1">delete beacon</a><br>
-<a href="\?del=2">delete sensor</a><br>
-
-
-
-<a class="clearurl" href="\?entype=1&id=1&lat=x234&long=y723&beacon=bID1&minor=m47&major=m67&androidID=ad1&uuid=uniqid1">add a beacon entity</a><br>
-<?php
-echo '<a class="clearurl" href="\?entype=2&id=1&sensortype=sensor1&value=723&timestamp='.$timestampInject.'&androidID=ad1">add a sensor entity</a><br>';
-?>
 </body>
 </html>
 <!--
