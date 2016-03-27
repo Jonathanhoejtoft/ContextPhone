@@ -19,6 +19,13 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_TOOLBAR" value="true" />
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="ContextPhoneServletApp" />
@@ -28,10 +35,10 @@
       <file leaf-file-name="app.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="544">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
-                <marker date="1458901154101" expanded="true" signature="160:169" placeholder="handlers:" />
+                <marker date="1459076798804" expanded="true" signature="160:270" placeholder="handlers:" />
               </folding>
             </state>
           </provider>
@@ -40,7 +47,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="493">
               <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding />
             </state>
@@ -50,24 +57,36 @@
       <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61494255" vertical-offset="3011" max-vertical-offset="4641">
-              <caret line="196" column="78" selection-start-line="196" selection-start-column="78" selection-end-line="196" selection-end-column="78" />
+            <state vertical-scroll-proportion="0.41379312" vertical-offset="4595" max-vertical-offset="5729">
+              <caret line="283" column="103" selection-start-line="283" selection-start-column="103" selection-end-line="283" selection-end-column="103" />
               <folding>
                 <element signature="e#7#601#0#PHP" expanded="true" />
-                <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-                <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-                <marker date="1458925827400" expanded="true" signature="5620:5656" placeholder="select * fro..Sensor..." />
-                <marker date="1458925827400" expanded="true" signature="5973:6007" placeholder="select * fro..Sensor..." />
-                <marker date="1458925827400" expanded="true" signature="5973:6021" placeholder="select * fro..Sensor..." />
-                <marker date="1458925827400" expanded="true" signature="5973:6153" placeholder="select * fro..Sensor..." />
-                <marker date="1458925827400" expanded="true" signature="6166:6188" placeholder="..." />
-                <marker date="1458925827400" expanded="true" signature="6166:6364" placeholder="..." />
-                <marker date="1458925827400" expanded="true" signature="6173:6188" placeholder="..." />
-                <marker date="1458925827400" expanded="true" signature="6341:6364" placeholder="..." />
-                <marker date="1458925827400" expanded="true" signature="6989:7130" placeholder="..." />
-                <marker date="1458925827400" expanded="true" signature="6989:7185" placeholder="..." />
-                <marker date="1458925827400" expanded="true" signature="7029:7130" placeholder="{...}" />
-                <marker date="1458925827400" expanded="true" signature="7039:7065" placeholder="/*...*/" />
+                <marker date="1459100422494" expanded="true" signature="2961:2994" placeholder="select * fro..Beacon..." />
+                <marker date="1459100422494" expanded="true" signature="2961:2996" placeholder="select * fro..Beacon..." />
+                <marker date="1459100422494" expanded="true" signature="2961:3020" placeholder="select * fro..Beacon..." />
+                <marker date="1459100422494" expanded="true" signature="2961:3042" placeholder="select * fro..Beacon..." />
+                <marker date="1459100422494" expanded="true" signature="2961:3044" placeholder="select * fro..Beacon..." />
+                <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+                <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+                <marker date="1459100422494" expanded="true" signature="2961:3057" placeholder="select * fro..Beacon..." />
+                <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+                <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+                <marker date="1459100422494" expanded="true" signature="5741:5781" placeholder="select * fro..Beacon..." />
+                <marker date="1459100422494" expanded="true" signature="5905:5939" placeholder="select * fro..Sensor..." />
+                <marker date="1459100422494" expanded="true" signature="6073:6119" placeholder="select * fro..Beacon..." />
+                <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+                <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+                <marker date="1459100422494" expanded="true" signature="6556:6588" placeholder="select * fro..Sensor..." />
+                <marker date="1459100422494" expanded="true" signature="6556:6602" placeholder="select * fro..Sensor..." />
+                <marker date="1459100422494" expanded="true" signature="6921:6955" placeholder="select * fro..Sensor..." />
+                <marker date="1459100422494" expanded="true" signature="6921:6969" placeholder="select * fro..Sensor..." />
+                <marker date="1459100422494" expanded="true" signature="7695:7908" placeholder="..." />
+                <marker date="1459100422494" expanded="true" signature="7702:7717" placeholder="..." />
+                <marker date="1459100422494" expanded="true" signature="7702:7863" placeholder="..." />
+                <marker date="1459100422494" expanded="true" signature="7870:7908" placeholder="..." />
+                <marker date="1459100422494" expanded="true" signature="8569:8783" placeholder="..." />
+                <marker date="1459100422494" expanded="true" signature="8619:8645" placeholder="/*...*/" />
+                <marker date="1459100422494" expanded="true" signature="8743:8784" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -125,7 +144,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -210,6 +228,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,15 +258,15 @@
     <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="false" name="ContextPhoneServletApp" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
@@ -277,23 +296,23 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20996979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21299094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -324,7 +343,61 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <marker date="1458901154101" expanded="true" signature="160:169" placeholder="handlers:" />
+            <marker date="1459076798804" expanded="true" signature="160:270" placeholder="handlers:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="493">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4641">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#601#0#PHP" expanded="true" />
+            <marker date="1459100422494" expanded="true" signature="2961:2994" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:2996" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3020" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3042" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3044" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3057" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5781" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5905:5939" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6073:6119" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6588" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6602" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6955" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6969" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="7695:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7717" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7863" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7870:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8569:8783" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8619:8645" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="8743:8784" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <marker date="1459076798804" expanded="true" signature="160:270" placeholder="handlers:" />
           </folding>
         </state>
       </provider>
@@ -343,20 +416,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#601#0#PHP" expanded="true" />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5656" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6007" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6021" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6153" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6173:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6341:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7130" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7185" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="7029:7130" placeholder="{...}" />
-            <marker date="1458925827400" expanded="true" signature="7039:7065" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="2961:2994" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:2996" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3020" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3042" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3044" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3057" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5781" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5905:5939" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6073:6119" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6588" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6602" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6955" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6969" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="7695:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7717" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7863" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7870:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8569:8783" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8619:8645" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="8743:8784" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -365,7 +450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="6681">
           <caret line="141" column="10" selection-start-line="141" selection-start-column="7" selection-end-line="141" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -374,7 +458,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="459">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <marker date="1458901154101" expanded="true" signature="160:169" placeholder="handlers:" />
+            <marker date="1459076798804" expanded="true" signature="160:270" placeholder="handlers:" />
           </folding>
         </state>
       </provider>
@@ -393,20 +477,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#601#0#PHP" expanded="true" />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5656" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6007" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6021" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6153" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6173:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6341:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7130" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7185" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="7029:7130" placeholder="{...}" />
-            <marker date="1458925827400" expanded="true" signature="7039:7065" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="2961:2994" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:2996" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3020" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3042" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3044" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3057" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5781" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5905:5939" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6073:6119" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6588" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6602" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6955" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6969" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="7695:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7717" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7863" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7870:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8569:8783" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8619:8645" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="8743:8784" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -423,7 +519,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="340">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <marker date="1458901154101" expanded="true" signature="160:169" placeholder="handlers:" />
+            <marker date="1459076798804" expanded="true" signature="160:270" placeholder="handlers:" />
           </folding>
         </state>
       </provider>
@@ -442,20 +538,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#601#0#PHP" expanded="true" />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5656" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6007" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6021" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6153" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6173:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6341:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7130" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7185" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="7029:7130" placeholder="{...}" />
-            <marker date="1458925827400" expanded="true" signature="7039:7065" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="2961:2994" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:2996" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3020" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3042" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3044" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3057" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5781" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5905:5939" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6073:6119" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6588" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6602" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6955" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6969" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="7695:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7717" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7863" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7870:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8569:8783" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8619:8645" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="8743:8784" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -472,7 +580,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="357">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <marker date="1458901154101" expanded="true" signature="160:169" placeholder="handlers:" />
+            <marker date="1459076798804" expanded="true" signature="160:270" placeholder="handlers:" />
           </folding>
         </state>
       </provider>
@@ -491,20 +599,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#601#0#PHP" expanded="true" />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5656" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6007" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6021" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6153" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6173:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6341:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7130" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7185" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="7029:7130" placeholder="{...}" />
-            <marker date="1458925827400" expanded="true" signature="7039:7065" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="2961:2994" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:2996" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3020" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3042" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3044" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3057" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5781" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5905:5939" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6073:6119" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6588" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6602" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6955" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6969" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="7695:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7717" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7863" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7870:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8569:8783" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8619:8645" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="8743:8784" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -521,7 +641,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="306">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <marker date="1458901154101" expanded="true" signature="160:169" placeholder="handlers:" />
+            <marker date="1459076798804" expanded="true" signature="160:270" placeholder="handlers:" />
           </folding>
         </state>
       </provider>
@@ -540,20 +660,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#601#0#PHP" expanded="true" />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5656" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6007" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6021" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6153" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6173:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6341:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7130" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7185" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="7029:7130" placeholder="{...}" />
-            <marker date="1458925827400" expanded="true" signature="7039:7065" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="2961:2994" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:2996" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3020" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3042" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3044" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3057" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5781" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5905:5939" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6073:6119" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6588" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6602" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6955" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6969" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="7695:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7717" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7863" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7870:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8569:8783" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8619:8645" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="8743:8784" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -570,7 +702,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="272">
           <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding>
-            <marker date="1458901154101" expanded="true" signature="160:169" placeholder="handlers:" />
+            <marker date="1459076798804" expanded="true" signature="160:270" placeholder="handlers:" />
           </folding>
         </state>
       </provider>
@@ -589,20 +721,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#601#0#PHP" expanded="true" />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5656" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6007" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6021" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6153" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6173:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6341:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7130" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7185" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="7029:7130" placeholder="{...}" />
-            <marker date="1458925827400" expanded="true" signature="7039:7065" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="2961:2994" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:2996" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3020" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3042" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3044" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3057" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5781" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5905:5939" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6073:6119" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6588" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6602" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6955" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6969" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="7695:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7717" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7863" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7870:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8569:8783" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8619:8645" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="8743:8784" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -633,7 +777,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="255">
           <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding>
-            <marker date="1458901154101" expanded="true" signature="160:169" placeholder="handlers:" />
+            <marker date="1459076798804" expanded="true" signature="160:270" placeholder="handlers:" />
           </folding>
         </state>
       </provider>
@@ -652,20 +796,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#601#0#PHP" expanded="true" />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5656" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6007" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6021" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6153" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6173:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6341:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7130" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7185" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="7029:7130" placeholder="{...}" />
-            <marker date="1458925827400" expanded="true" signature="7039:7065" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="2961:2994" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:2996" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3020" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3042" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3044" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3057" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5781" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5905:5939" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6073:6119" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6588" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6602" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6955" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6969" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="7695:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7717" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7863" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7870:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8569:8783" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8619:8645" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="8743:8784" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -682,7 +838,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="255">
           <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding>
-            <marker date="1458901154101" expanded="true" signature="160:169" placeholder="handlers:" />
+            <marker date="1459076798804" expanded="true" signature="160:270" placeholder="handlers:" />
           </folding>
         </state>
       </provider>
@@ -701,20 +857,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#601#0#PHP" expanded="true" />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5656" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6007" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6021" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6153" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6173:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6341:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7130" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7185" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="7029:7130" placeholder="{...}" />
-            <marker date="1458925827400" expanded="true" signature="7039:7065" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="2961:2994" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:2996" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3020" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3042" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3044" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3057" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5781" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5905:5939" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6073:6119" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6588" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6602" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6955" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6969" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="7695:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7717" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7863" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7870:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8569:8783" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8619:8645" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="8743:8784" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -742,10 +910,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="544">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <marker date="1458901154101" expanded="true" signature="160:169" placeholder="handlers:" />
+            <marker date="1459076798804" expanded="true" signature="160:270" placeholder="handlers:" />
           </folding>
         </state>
       </provider>
@@ -775,7 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="6681">
           <caret line="141" column="10" selection-start-line="141" selection-start-column="7" selection-end-line="141" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,24 +970,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61494255" vertical-offset="3011" max-vertical-offset="4641">
-          <caret line="196" column="78" selection-start-line="196" selection-start-column="78" selection-end-line="196" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.41379312" vertical-offset="4595" max-vertical-offset="5729">
+          <caret line="283" column="103" selection-start-line="283" selection-start-column="103" selection-end-line="283" selection-end-column="103" />
           <folding>
             <element signature="e#7#601#0#PHP" expanded="true" />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5653" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5620:5656" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6007" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6021" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="5973:6153" placeholder="select * fro..Sensor..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6166:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6173:6188" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6341:6364" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7130" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="6989:7185" placeholder="..." />
-            <marker date="1458925827400" expanded="true" signature="7029:7130" placeholder="{...}" />
-            <marker date="1458925827400" expanded="true" signature="7039:7065" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="2961:2994" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:2996" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3020" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3042" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3044" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3055" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="2961:3057" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5761" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5741:5781" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="5905:5939" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6073:6119" placeholder="select * fro..Beacon..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6587" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6588" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6556:6602" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6955" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="6921:6969" placeholder="select * fro..Sensor..." />
+            <marker date="1459100422494" expanded="true" signature="7695:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7717" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7702:7863" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="7870:7908" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8569:8783" placeholder="..." />
+            <marker date="1459100422494" expanded="true" signature="8619:8645" placeholder="/*...*/" />
+            <marker date="1459100422494" expanded="true" signature="8743:8784" placeholder="{...}" />
           </folding>
         </state>
       </provider>
