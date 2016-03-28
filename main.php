@@ -77,7 +77,7 @@ $UUID = $_GET['uuid'];
 //$sensor = $_GET['sensor'];
 // only for testing
 $deleteID = $_GET['del'];
-$updateID = $_GET['upd'];
+$updateID = $_GET['EntityID'];
 $GetData = $_GET['getdata'];
 
 $obj_store_fetch = new GDS\Store('Beacon');
@@ -204,7 +204,7 @@ function show2($arr)
 
 
 /* delete script */
-if($deleteID == 1){
+if($deleteID == 'beacon'){
     //$arr_1 = $obj_store_fetch->fetchAll();
     $arr_1 = $obj_store_fetch->fetchOne("select * from Beacon where Bid='".$updateID."'"); // deleting based on GQL
     echo "Found ", count($arr_1), " records", PHP_EOL;
@@ -216,7 +216,7 @@ if($deleteID == 1){
         echo "no id found";
     }
 }
-else if($deleteID == 2){
+else if($deleteID == 'sensor'){
 
     //$arr_1 = $obj_store_fetch2->fetchById("4967730973245440");
     //$arr_1 = $obj_store_fetch2->fetchAll();
@@ -275,8 +275,8 @@ else if($GetData == 2){
 </head>
 <body>
 <hr>
-<button><a id="delbeacon" href="\?del=1">delete beacon</a></button><br>
-<button><a id="delsensor" href="\?del=2">delete sensor</a></button><br>
+<button><a id="delbeacon" href="\?del=beacon">delete beacon</a></button><br>
+<button><a id="delsensor" href="\?del=sensor">delete sensor</a></button><br>
 <button><a id="update" href="">update sensor</a></button><br>
 
 
@@ -299,9 +299,9 @@ echo '<a id="addsensor" class="clearurl" href="\?entype=2&id=1&sensortype=sensor
 
         var val =  $("#val").val();
         $("#val").change(function(){
-            $("#update").attr("href", "\?upd="+$("#val").val());
-            $("#delbeacon").attr("href", "\?upd="+$("#val").val()+"&del=1");
-            $("#delsensor").attr("href", "\?upd="+$("#val").val()+"&del=2");
+            $("#update").attr("href", "\?EntityID="+$("#val").val());
+            $("#delbeacon").attr("href", "\?EntityID="+$("#val").val()+"&del=beacon");
+            $("#delsensor").attr("href", "\?EntityID="+$("#val").val()+"&del=sensor");
             var hrefs = $('#addsensor').attr('href');
             var hrefb = $('#addbeacon').attr('href');
             $("#addsensor").attr("href", hrefs + "&value=" + $("#val").val());
@@ -324,6 +324,10 @@ echo '<a id="addsensor" class="clearurl" href="\?entype=2&id=1&sensortype=sensor
         }
     });
 </script>
+<form action="/getdata.php" method="GET">
+
+    <input type="submit">
+</form>
 </body>
 </html>
 <!--

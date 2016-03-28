@@ -1,4 +1,4 @@
-application: contextphone-1253
+application: contextphone-v1
 version: 1
 runtime: php55
 api_version: 1
@@ -6,6 +6,10 @@ api_version: 1
 handlers:
 - url: /stylesheets
   static_dir: stylesheets
+
+- url: /getdata.php*
+  script: getdata.php
+
 
 - url: /.*
   script: main.php
