@@ -61,7 +61,7 @@ $entity = null; // var for defining sensor or beacon
 // define sensor params
 
 //$id = "key" . 3;
-$id = "key" . mt_rand(100000,999999); ; // id for both entities
+$id = "key" . mt_rand(100000,999999);  // id for both entities
 $sensorType = $_GET['sensortype']; // Type
 $value = $_GET['value']; // value for both
 $timestamp = $_GET['timestamp'];
@@ -190,7 +190,7 @@ function show2($arr)
     echo PHP_EOL, "Query found ", count($arr), ":sensor records", PHP_EOL . "<br>";
     foreach ($arr as $obj_model) {
 
-        echo "  sensorType: {$obj_model->sensortype},Timestamp: {$obj_model->timestamp},SID: {$obj_model->Sid}", PHP_EOL . "<br>";
+        echo "  sensorType: {$obj_model->sensortype},Timestamp: {$obj_model->timestamp},SID: {$obj_model->Sid},value: {$obj_model->value}", PHP_EOL . "<br>";
 
 
     }

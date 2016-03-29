@@ -10,6 +10,9 @@ handlers:
 - url: /getdata.php*
   script: getdata.php
 
+- url: /update.php*
+  script: update.php
+
 
 - url: /.*
   script: main.php

@@ -47,42 +47,46 @@ require_once("GDS/Mapper/ProtoBufGQLParser.php");
 
 
 
-$GetData = $_GET['getdata'];
+$value = $_GET['value'];
+$keyID = $_GET['keyid'];
+
+/*entitydata by get */
+$sensorType = $_GET['sensortype'];
+$timestamp = date("Y-m-d H:i:s");
 
 $obj_store_fetch = new GDS\Store('Beacon');
 $obj_store_fetch2 = new GDS\Store('Sensor');
 
 
-/* return all data as json to contextApp */
-if($GetData ==1){
-    $items = array();
-    $arr =  $obj_store_fetch->fetchAll();
-    foreach ($arr as $obj_model) {
-        //echo "BID: " . $obj_model->Bid;
-        $items[] = $obj_model->getData();
-        //echo $obj_model->getKeyId();
-      // print_r(array_values($items));
-        //echo $obj_model->getData();
-        //echo json_encode($items,JSON_PRETTY_PRINT);
+if($value){
 
+        //$arr_1 = $obj_store_fetch->fetchAll();
+        $arr_1 = $obj_store_fetch->fetchOne("select * from Sensor where Sid='".$keyID."'"); // deleting based on GQL
+        echo "Found ", count($arr_1), " records", PHP_EOL;
+    /* deleting key, add with new data */
+        if($arr_1 != 0){
+            $obj_store_fetch->delete($arr_1);
+            echo "deleted beacon entity with id:" .$keyID ;
+            /*add new entity */
 
-    }
-    echo '{"myarray":'. json_encode($items,JSON_PRETTY_PRINT) . '}';
+            $obj_2 = new GDS\Entity();
+            $obj_2->sensortype = $sensorType;
+            $obj_2->value = $value;
+            $obj_2->timestamp = $timestamp;
+            $obj_2->Sid = $keyID;
+
+            // Write it to Datastore
+            $obj_store = new GDS\Store("Sensor");
+            $obj_store->upsert($obj_2);
+        }
+        else{
+            echo "no id found";
+        }
+
+    echo "is set" . $value;
 }
-else if($GetData == 2){
-
-    $items = array();
-    $arr =  $obj_store_fetch2->fetchAll();
-    foreach ($arr as $obj_model) {
-
-        $items[] = $obj_model->getData();
-
-        //print_r(array_values($items));
-
-
-
-    }
-    echo '{"myarray":'. json_encode($items,JSON_PRETTY_PRINT) . '}';
+else{
+    echo "not set" . $value;
 }
 
 ?>
